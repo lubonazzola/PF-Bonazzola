@@ -1,0 +1,50 @@
+.img-tips {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.img-calcio {
+    height: 300px;
+    width: 100%;
+}
+
+#left, #text-left {
+    text-align: left;
+}
+
+#right, #text-right {
+    text-align: right;
+    padding: $espacio-extrachico;
+}
+
+.grid-lavado {
+    display: grid;
+    grid-template-areas:
+    "lavar1"
+    "lavar2";
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    row-gap: $espacio-chico;
+    text-align: left;
+    padding: $espacio-extrachico;
+}
+
+@media (min-width: $desktop) {
+    .grid-lavado {
+        display: grid;
+        grid-template-areas:
+        "lavar1 lavar2";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1;
+        column-gap: 20px;
+        text-align: left;
+        align-items: center;
+        padding: $espacio-mediano;
+    }
+}
+
+.lavar2 iframe {
+    max-width: 100%;
+}
